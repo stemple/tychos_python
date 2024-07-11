@@ -1,7 +1,7 @@
 {
-  "name": "@lezer/python",
-  "version": "1.1.14",
-  "description": "Lezer-based Python grammar",
+  "name": "@tychos/lezer-python",
+  "version": "1.0",
+  "description": "Lezer-based Python grammar with additional tokens for Tychos python API",
   "main": "dist/index.cjs",
   "type": "module",
   "exports": {
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/lezer-parser/python.git"
+    "url" : "https://github.com/stemple/tychos_python.git"
   },
   "scripts": {
     "build": "lezer-generator src/python.grammar -o src/parser && rollup -c",
