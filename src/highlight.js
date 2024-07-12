@@ -6,7 +6,7 @@ export const pythonHighlighting = styleTags({
   "in not and or is del": t.operatorKeyword,
   "from def class global nonlocal lambda": t.definitionKeyword,
   import: t.moduleKeyword,
-  "with as print": t.keyword,
+  "with as print circle": t.keyword,
   Boolean: t.bool,
   None: t.null,
   VariableName: t.variableName,
