@@ -1,6 +1,6 @@
 {
   "name": "@tychos/lezer-python",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Lezer-based Python grammar with additional tokens for Tychos python API",
   "main": "dist/index.cjs",
   "type": "module",
@@ -13,19 +13,19 @@
   "author": "Marijn Haverbeke <marijn@haverbeke.berlin>",
   "license": "MIT",
   "devDependencies": {
-    "@lezer/generator": "^1.0.0",
+    "@lezer/generator": "^1.7.1",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "mocha": "^10.2.0",
-    "rollup": "^2.52.2",
-    "@rollup/plugin-node-resolve": "^9.0.0"
+    "rollup": "^2.52.2"
   },
   "dependencies": {
     "@lezer/common": "^1.2.0",
-    "@lezer/lr": "^1.0.0",
-    "@lezer/highlight": "^1.0.0"
+    "@lezer/highlight": "^1.0.0",
+    "@lezer/lr": "^1.0.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/stemple/tychos_python.git"
+    "type": "git",
+    "url": "https://github.com/stemple/tychos_python.git"
   },
   "scripts": {
     "build": "lezer-generator src/python.grammar -o src/parser && rollup -c",
